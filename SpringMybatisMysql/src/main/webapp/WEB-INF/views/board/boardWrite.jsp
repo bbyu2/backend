@@ -11,20 +11,20 @@
 </style>
 <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
 <script>
-	$(function() {
-		CKEDITOR.replace("content");
+   $(function() {
+      CKEDITOR.replace("content");
 
-		$("#boardFrm").submit(function() {
-			if ($("#subject").val() == '') {
-				alert("글 제목을 입력하세요");
-				return false;
-			}
-			if (CKEDITOR.instances.content.getData() == '') {
-				alert("글내용을 입력하세요");
-				return false;
-			}
-		});
-	});
+      $("#boardFrm").submit(function() {
+         if ($("#subject").val() == '') {
+            alert("글 제목을 입력하세요");
+            return false;
+         }
+         if (CKEDITOR.instances.content.getData() == '') {
+            alert("글내용을 입력하세요");
+            return false;
+         }
+      });
+   });
 </script>
 <div class="container">
 	<h1>글등록 폼</h1>
