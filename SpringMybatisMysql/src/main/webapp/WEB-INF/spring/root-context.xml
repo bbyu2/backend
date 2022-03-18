@@ -15,7 +15,7 @@
 			value="com.mysql.cj.jdbc.Driver"></property>
 		<property name="url" value="jdbc:mysql://127.0.0.1/campusDB"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="root1234"></property>
+		<property name="password" value="0000"></property>
 	</bean>
 	<!-- 디펜던시 인젝션 (DI) : 특정 객체에 필요한 객체를 외부에서 결정해서 연결시키는 것 -->
 	<!-- mybatis에서 사용할 xml파일의 위치를 이용하여 SqlSessionFactory객체를 생성 = dataSource객체를 

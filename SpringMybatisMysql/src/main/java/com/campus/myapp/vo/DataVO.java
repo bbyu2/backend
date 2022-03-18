@@ -10,8 +10,9 @@ public class DataVO extends Object{
 	private String filename1;
 	private String filename2;
 	
-	// »èÁ¦ÇÒ ÆÄÀÏ¸í ´ãÀ» º¯¼ö
+	// ì‚­ì œí•˜ íŒŒì¼ëª… ë‹´ì„ ë³€ìˆ˜
 	private String delFile[];
+	
 	
 	public String toString() {
 		return userid+", "+subject+", "+content+", "+ filename1+",  "+filename2;

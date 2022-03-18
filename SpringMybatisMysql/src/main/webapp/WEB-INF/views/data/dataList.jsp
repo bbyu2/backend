@@ -21,16 +21,16 @@
 		<li>첨부파일</li>
 		<li>등록일</li>
 		
-		<c:forEach var="vo" items="${lst }">
-			<li>${vo.no}</li>
+		<c:forEach var="vo" items="${lst}">
+			<li>${vo.no }</li>
 			<li><a href="/myapp/data/view?no=${vo.no}">${vo.subject}</a></li>
 			<li>${vo.userid }</li>
-			<li>
-				<!-- 첫번째 첨부파일 -->
-				<a href="/myapp/upload/${vo.filename1 }" download><img src="/myapp/img/disk.png" title="${vo.filename1 }"/></a>
-				<!-- 두번째 첨부파일 -->
-				<c:if test="${vo.filename2 !=null && vo.filename2!='' }">
-					<a href='/myapp/upload/${vo.filename2 }' download><img src='/myapp/img/disk.png' title='${vo.filename2 }' /></a>
+			<li><!-- 다운로드 가능하게 해줄거임 -->
+				<!-- 첫번째 첨부파일(무조건있음) -->
+				<a href="/myapp/upload/${vo.filename1}" download><img src="/myapp/img/disk.png" title="${vo.filename1}"/></a>
+				<!-- 두번재 첨부파일 -->
+				<c:if test="${vo.filename2!=null && vo.filename2!=''}">
+					<a href='/myapp/upload/${vo.filename2}' download><img src='/myapp/img/disk.png' title='${vo.filename2}'></a>
 				</c:if>
 			</li>
 			<li>${vo.writedate }</li>
