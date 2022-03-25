@@ -12,4 +12,5 @@ public interface DataDAO {
 	//파일명 선택
 	public DataVO getFileName(int no);
 	public int dataUpdate(DataVO vo);
+	public int dataDelete(int no, String userid);
 }

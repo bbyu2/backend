@@ -40,4 +40,9 @@ public class DataServiceImpl implements DataService {
 		return dao.dataUpdate(vo);
 	}
 
+	@Override
+	public int dataDelete(int no, String userid) {
+		return dao.dataDelete(no, userid);
+	}
+
 }
