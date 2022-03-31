@@ -23,8 +23,8 @@ fs.readFile(__dirname+"/file_read.txt" ,'utf-8', function(error, data){
     }
 });
 
-// 동기식으로 파일 읽는 방법 : 읽기 쓰기 명령을 만나면 바로 시행한다.
-//
+// 동기식으로 파일 읽는 방법 : 읽기쓰기 명령을 만나면 바로 실행한다.
+//              파일명, 인코딩
 var data = fs.readFileSync(__dirname+"/node01_start.js", 'utf-8');
-console.log("파일2: 동기식으로 파일읽기 -=-=-=-=-=-=");
+console.log("파일2 : 동기식으로 파일 읽기 ===== ");
 console.log(data);
